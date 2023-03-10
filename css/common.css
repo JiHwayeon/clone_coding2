@@ -1,0 +1,15 @@
+@charset 'utf_8';
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+body{font-family: 'Nanum Gothic', sans-serif;
+    font-size: 14px; 
+    line-height: 1.35;
+    color: #121212;
+
+}
+
+*{margin: 0; padding: 0;}
+a{color: #121212; text-decoration: none;}
+img{border: none; vertical-align: top;}
+select, input{vertical-align: top;}
+ul, ol{list-style: none;}

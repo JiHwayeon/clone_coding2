@@ -1,0 +1,82 @@
+@charset 'utf_8';
+/*position: fixed,position: absolute는 width 100%는 생략하면 안됨 */
+#header{height: 96px; border-bottom: 1px solid #ccc; 
+background-color: #fff; width: 100%;
+position: fixed; top:0; left: 0; z-index: 999;}
+.headerin{width: 980px; margin: 0 auto; position: relative;}
+
+.headerin .logo a{display: block; width: 216px; height: 38px;
+                background: url(../img/logo.jpg) no-repeat bottom left; 
+                color: transparent; font-size: 0;
+                padding-top: 29px;} 
+.headerin h2{display: none;}
+.headerin .topmenu{position: absolute; top:10px; right: 0;}
+/* .headerin .topmenu::after{content: ''; display: block; clear: both;} */
+/*float시키면 엄마한테 clear 처리
+단, 엄마가 앱솔루트되어있으면 독립된것이므로 clear 처리 안시켜줘도 됨*/
+
+.headerin .topmenu li{
+float: left; margin-right: 20px;
+margin-left: 10px;  padding-left: 10px;
+                  border-left: 1px solid #ccc;
+                line-height: 12px;}
+.headerin .topmenu li:first-child{border-left: none;}                
+.headerin .topmenu li:last-child{margin-right: 0;}
+.headerin .topmenu li a{color: #888; font-size: 12px;}
+
+
+.headerin .gnb{position: absolute; top:44px; right: 0;}
+
+.headerin .gnb li{float: left; margin-left: 70px;;}
+
+.headerin .gnb li a{display: block; height: 24px; font-size: 0; color: transparent;}
+
+.headerin .gnb li:nth-child(1) a{ width: 50px;  background: url(../img/menu1.jpg) no-repeat ;}
+                       
+.headerin .gnb li:nth-child(2) a{ width: 70px; 
+background: url(../img/menu2.jpg) no-repeat ;}
+.headerin .gnb li:nth-child(3) a{ width: 48px; height: 20px; 
+ background: url(../img/menu3.jpg) no-repeat ;}
+ .headerin .gnb li:nth-child(4) a{ width: 56px; height: 20px; 
+ background: url(../img/menu4.jpg) no-repeat ;}
+ .headerin .gnb li:nth-child(5) a{ width: 111px; height: 20px; 
+ background: url(../img/online_shop.jpg) no-repeat ;}  
+
+ .headerin .gnb li:hover a{background-position: 0 -26px;} 
+ .headerin .gnb li:last-child a{background-position: 0;}
+
+.container{padding-top:97px} 
+#slide{background: url(../img/main_visual_5.jpg) no-repeat center top; height: 565px; }
+
+.content{ width: 980px; margin: 50px auto;}
+.info::after{content: ''; display: block; clear: both;}
+.info > div{float: left; margin-right: 22px;}
+.info > div:last-child{margin-right: 0;}
+
+.stroy{margin: 40px 0; height: 17px; 
+background: url(../img/sorbebe-story.jpg) no-repeat center; 
+color: transparent; font-size: 0;}
+
+.bn::after{content: ''; display: block; clear: both;}
+.bn .cols{float: left;margin-right: 22px; }
+.bn .cols:last-child{margin-right: 0;}
+.bn .cols a{position: relative;}
+
+.bn .cols a .over{position: absolute; top:0; left: 0; opacity: 0; transition: all 1s;}
+.bn .cols a:hover .over{opacity: 1;}
+.bn .cols > div{margin-bottom: 22px;}
+.bn .cols > div:last-child{margin-bottom: 0;}
+
+footer{width: 100%; height: 112px; background-color: #323f4d;}
+.footerin{width: 980px; margin: 0 auto; height: 112px;
+background: url(../img/copyright.jpg) no-repeat center top;
+position: relative;}
+/*select태그는 일반적인 태그와 사이즈를 인식하는 기준이 다름,
+눈에 보이는 대로 인식*/
+.footerin .family{position: absolute; top:20px; right: 13px;
+width: 136px; height: 26px; padding: 5px;
+outline: none; border: 0;}
+.footerin .family select{width: 136px; height: 26px; padding-left: 10px;
+  outline: none;border: 1px solid #6a7786;
+background-color: #323f4d; color: #a3a8af; font-size: 11px;
+text-transform: uppercase;}
